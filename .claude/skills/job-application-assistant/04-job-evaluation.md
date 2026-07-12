@@ -16,9 +16,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** JavaScript/TypeScript, React, Angular, Redux, RxJS, CSS, Cypress, frontend architecture (BFF, RBAC, multi-step workflows)
+**Moderate match areas:** Node.js, Ruby on Rails, AWS (Lambda, CloudFormation), PostgreSQL, Redis, CI/CD, observability (Splunk/New Relic/CloudWatch)
+**Weak match areas:** Backend-heavy/infrastructure-first roles, roles requiring deep systems/architecture ownership (growth area, not yet demonstrated at senior/staff level)
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +30,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Frontend/Product Engineer roles (Angular, React, TypeScript) in B2B/enterprise SaaS or financial services
+**Moderate:** Full-stack roles (Node.js/Ruby backend + frontend), roles with a BFF/API layer component
+**Entry-level:** Backend-only or infrastructure/platform engineering roles
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -63,19 +63,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Grow from feature-delivery ownership toward architecture/infrastructure-level decision-making
+- Move into Frontend/Product Engineer or Full Stack (Node/Ruby) roles with more system design scope
+- Build toward senior/staff-level technical leadership
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: architecture and infrastructure-level decisions, cross-functional collaboration with Product/Design, mentoring, complex frontend systems (workflows, BFF, RBAC)
+- Tasks that drain: repetitive maintenance work, excessive meetings/process overhead, unclear ownership boundaries
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed full-time at Accenture Song; not under urgent pressure to leave, evaluate opportunistically
+- **Flexibility**: Prefers remote or hybrid (NYC-based); baseline salary target ~$140k
+- **Professional development**: Prioritizes roles offering growth into architecture/infrastructure-level engineering, not just lateral frontend moves
 
 ### 6. Salary Benchmark (Optional)
 

@@ -4,66 +4,66 @@
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY])
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+The built-in `.agents/skills/` job-portal CLI tools (Jobindex, Jobbank, Jobdanmark, Jobnet) are Danish-market-specific and do not apply here - Anthony is based in New York, NY. Use LinkedIn and Google `site:` searches instead. Consider running `/add-portal` to build a local search skill for a US-specific board (e.g. Indeed, Wellfound, Dice) if a recurring need shows up.
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+Primary (US job market):
+
+- **linkedin.com/jobs** - primary source, filter by location (New York, NY / Remote)
+- **ATS boards** (Ashby, Greenhouse, Lever, Workday, et al.) - see `ats-boards.md` in this directory. Most reqs are posted here and never syndicated to LinkedIn or aggregators; this is the highest-yield source for postings other candidates never see.
+- **builtin.com / builtinnyc.com** - NYC-heavy aggregator, reliably fetchable
+- Company career pages via Google `site:` searches for known target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Each query should be combined with location terms ("New York, NY" or "Remote") where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Frontend / Product Engineer
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+Strongest and most desired career direction - Angular/React/TypeScript-heavy roles with growth into architecture.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "Frontend Engineer" OR "Product Engineer" "New York" OR "Remote"
+site:linkedin.com/jobs "Senior Frontend Engineer" React TypeScript
+"Frontend Engineer" React Angular TypeScript "New York, NY"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Full Stack (Node/Ruby)
 
-Adjacent roles you could pivot into.
+Domain expertise expansion - roles offering backend/architecture ownership alongside frontend work.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "Full Stack Engineer" Node.js React "New York" OR "Remote"
+site:linkedin.com/jobs "Full Stack Engineer" Ruby on Rails
+"Full Stack Software Engineer" TypeScript Node.js "New York, NY"
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: Adjacent Roles
+
+Roles Anthony could pivot into given his BFF/architecture/testing-leadership experience.
+
+```
+site:linkedin.com/jobs "UI Engineer" OR "Web Engineer" TypeScript "New York" OR "Remote"
+site:linkedin.com/jobs "Software Engineer II" OR "Software Engineer III" React Angular
+site:linkedin.com/jobs "Frontend Architect" OR "Staff Frontend Engineer"
+```
+
+### Priority 4: Broader Technical
 
 Wider net for general technical roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Software Engineer" React TypeScript "New York" OR "Remote"
+site:linkedin.com/jobs "JavaScript Developer" OR "TypeScript Developer" "Remote"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, verify the job location matches Anthony's constraints:
+
+- **Ideal:** Fully remote (US-based)
+- **Acceptable:** Hybrid roles based in New York, NY (any borough or reasonable commute distance)
+- **Borderline:** Hybrid roles requiring frequent travel outside NYC metro - flag and discuss
+- **Too far:** On-site-only roles outside the NYC metro area, or any role requiring relocation
 
 ## Date Filter
 
@@ -72,4 +72,5 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
+
 - "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries

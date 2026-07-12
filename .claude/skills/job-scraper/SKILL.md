@@ -40,6 +40,7 @@ Optional arguments:
 1. Read `job_scraper/seen_jobs.json` (create if missing - start with `{"seen": {}}`)
 2. Read `job_search_tracker.csv` to extract already-applied companies+roles
 3. Read `search-queries.md` (this directory) for the search strategy
+4. Read `ats-boards.md` (this directory) for the ATS board search strategy
 
 ### Step 1: Search
 
@@ -77,8 +78,17 @@ Use `WebSearch` for:
 - Portals listed in `search-queries.md` that do **not** have a corresponding directory under `.agents/skills/`
 - Any portal whose CLI fails at runtime
 - When bun is unavailable (Step 1a failed)
+- **ATS boards** — see `ats-boards.md`
 
 Use the site-specific query strings from `search-queries.md` directly as WebSearch queries for these portals.
+
+#### 1d. ATS board sweep (reaches jobs never posted to aggregators)
+
+Most reqs live on the company's own ATS board and are never syndicated to LinkedIn or Built In. Read `ats-boards.md` for the host list, query construction, and caveats, then sweep **2-3 hosts per run**, rotating which hosts across runs rather than firing all ten every time.
+
+Two rules specific to this source, both spelled out in `ats-boards.md`:
+- **Always `WebFetch` before presenting.** Closed reqs stay indexed and snippets go stale.
+- **Posting dates are often absent.** Where no date can be established, include the job but flag it `date unknown` in the results table — do not silently drop it, and do not assume it is recent.
 
 ### Step 2: Fetch & Parse
 

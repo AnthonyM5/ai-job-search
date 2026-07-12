@@ -1,50 +1,39 @@
 # Behavioral Profile
 
 <!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- Synthesized from self-assessment questions (no formal PI/DISC/MBTI results provided) -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
-
-## Core Behavioral Drives
-
-| Drive | Level | Meaning |
-|-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+Anthony is a **collaborative, consensus-driven engineer who is comfortable operating under ambiguity**. He thrives in fast-paced, team-heavy environments, prefers to align stakeholders before committing to a direction, and communicates with thorough, detailed context rather than terse shorthand.
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Collaboration:** Does his best work pairing and coordinating closely with a team, not in isolation.
+- **Comfort with ambiguity:** Thrives scoping solutions in fast-paced, high-ambiguity environments (consistent with owning frontend delivery end-to-end at Accenture).
+- **Thorough communication:** Over-communicates context deliberately to avoid ambiguity for teammates and stakeholders.
+- **Mentoring:** Mentors junior engineers on frontend architecture, testing strategy, and code quality - a force multiplier signal that maps directly to senior/staff-level expectations.
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Fast-paced settings with real problem-solving, not repetitive maintenance
+- Collaborative team structures with clear ownership boundaries
+- Environments where decisions are made through stakeholder alignment rather than top-down mandate
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Consensus-seeking decision style:** Can be framed as strong stakeholder management and cross-functional alignment skill, not indecisiveness - back this with the RBAC and multi-step workflow work, which required coordinating requirements across product, design, and engineering.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "cross-functional collaboration," "work closely with Product/Design," "fast-paced," "ambiguity," "ownership," "mentoring," "mentorship," "technical guidance," "raise the bar," "force multiplier"
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- "heavy process/bureaucracy," "siloed individual contributor role," "minimal cross-team interaction," "maintenance-focused role"
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Works well with managers who involve the team in decisions and provide clear ownership boundaries
+- Drained by excessive meetings/process overhead and unclear ownership - flag roles that signal heavy process bureaucracy
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Emphasize cross-functional collaboration (Product/Design partnership) and comfort scoping under ambiguity.
+- **CV:** Emphasize ownership language ("owned and shipped end-to-end") and mentoring/cross-team standardization work (Cypress patterns).
+- **Interviews:** Use the RBAC and multi-step workflow STAR examples to demonstrate consensus-building under ambiguity.
+- **Don't overstate:** Don't claim a fast, unilateral decision-making style - his actual strength is deliberate, consensus-driven decisions.

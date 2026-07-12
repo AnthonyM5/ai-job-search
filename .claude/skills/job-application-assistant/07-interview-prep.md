@@ -33,6 +33,58 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 **R:** [OUTCOME]
 **Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
 
+## STAR Candidates (Complete Manually)
+
+### jQuery to React/TypeScript migration
+**Source:** CV - Accenture Song
+**What happened:** Led the migration of legacy jQuery-based interfaces to modern React and TypeScript architectures, reducing UI-related defects by ~30%.
+**Why it matters:** Answers technical leadership, legacy modernization, and measurable-impact questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Role-based access control system
+**Source:** CV - Accenture Song
+**What happened:** Built and maintained RBAC across a high-traffic internal Angular application, gating UI paths based on associate role and customer profile status.
+**Why it matters:** Answers system design, security/entitlement, and complexity-handling questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Dynamic multi-step workflow (reactivation feature)
+**Source:** CV - Accenture Song
+**What happened:** Designed and built a multi-step form workflow from scratch in Angular with dynamic branching logic based on associate role and customer inputs.
+**Why it matters:** Answers "describe a complex feature you built from scratch" and ambiguity-handling questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Cypress testing standardization
+**Source:** CV - Accenture Song
+**What happened:** Standardized Cypress end-to-end testing patterns across teams, improving regression coverage and release confidence.
+**Why it matters:** Answers quality/testing culture and cross-team influence questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Content system reliability fix
+**Source:** CV - AJ Madison
+**What happened:** Maintained and optimized large-scale product content systems, reducing stale links and broken user flows by ~85%.
+**Why it matters:** Answers data-integrity and early-career impact questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
 ## Common Tough Questions

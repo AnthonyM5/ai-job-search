@@ -1,4 +1,4 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Anthony Mai
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
@@ -24,18 +24,19 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Anthony Mai - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Anthony}{Mai}
+\address{New York, NY}{}{}
+\phone[mobile]{917-887-0970}
+\email{anthony.mai530@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/anthonymai5}{LinkedIn}, \href{https://github.com/AnthonyM5}{GitHub}, \href{https://inter-slice.dev}{Portfolio}}
 
 \begin{document}
 
@@ -46,7 +47,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Software engineer with 5+ years building scalable Angular and React applications in TypeScript, with a focus on complex B2B and enterprise workflows. At Accenture Song, owned frontend delivery end-to-end across financial services platforms, including role-based access control, multi-step branching workflows, BFF architecture on AWS Lambda, and end-to-end testing strategy with Cypress. Focused on reliable systems, clean data contracts, and shipping features that hold up under real-world complexity.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +57,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Frontend Engineering}: React, Angular, Redux, RxJS, TypeScript, JavaScript, CSS
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend \& APIs}: Node.js, Ruby on Rails, BFF architecture, AWS Lambda
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Testing \& Quality}: Cypress end-to-end testing, standardized regression coverage patterns
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Architecture}: Role-based access control, multi-step branching workflows, data contracts
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Observability \& Infrastructure}: AWS (Lambda, CloudFormation), CI/CD, Splunk, New Relic, CloudWatch, PostgreSQL, Redis
 
 \end{itemize}
 
@@ -77,33 +78,43 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2021--Present}{Software Engineer (Product)}{Accenture Song}{New York, NY}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Owned and shipped end-to-end, customer-facing Angular and TypeScript features for high-traffic applications, collaborating with Product and Design to scope solutions under ambiguity
+    \item Led the migration of legacy jQuery-based interfaces to modern React and TypeScript architectures, reducing UI-related defects by ~30\%
+    \item Owned and maintained a Backend-for-Frontend layer in Node.js and AWS Lambda to reduce frontend complexity and improve data contracts
+    \item Built and maintained role-based access control across a high-traffic internal Angular application, enforcing entitlement rules at the presentation layer
+    \item Standardized Cypress end-to-end testing patterns across teams, improving regression coverage and release confidence
+    \item Designed and built multi-step form workflows from scratch in Angular, including a reactivation feature with dynamic branching logic
+    \item Mentored junior engineers on frontend architecture, testing strategy, and code quality
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2019--2021}{Web Content Specialist}{AJ Madison}{New York, NY}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Collaborated with engineering and product teams on frontend QA and Cypress testing efforts, contributing to increased site reliability
+    \item Maintained and optimized large-scale product content systems, reducing stale links and broken user flows by ~85\%
+    \item Worked closely with stakeholders to manage data integrity across SKUs, CMS updates, and partner integrations
 \end{itemize}}}
 
-\vspace{3pt}
+\end{itemize}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% ============================================================
+%     INDEPENDENT PROJECTS
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Independent Projects}
+\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+\item{\cventry{}{PawPlate --- AI-Assisted Canine Nutrition Platform}{\href{https://v0-supabase-community-starter-green-zeta.vercel.app}{PawPlate}}{Next.js 15, React, TypeScript, Supabase, Gemini}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built a vision-to-nutrition pipeline where an LLM handles perception and a deterministic, network-free engine handles all health-critical math, validated with structured outputs (Zod) and a corrective retry loop
+    \item Designed a null-aware multi-source data model (``missing is not zero'') so sparse branded nutrition data never fabricates deficiencies; excluded untrusted sources from the gap engine by policy
+    \item Ran a live data-sourcing audit that surfaced 14 unmapped AAFCO-required nutrients; shipped migration and backfill. Found and fixed a service-role authorization vulnerability; covered with negative end-to-end tests
 \end{itemize}}}
-
 \end{itemize}
 
 % ============================================================
@@ -114,16 +125,14 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\item{\cventry{--2026}{Bachelor of Science in Information Science}{City University of New York}{New York, NY}{}{}}
 
-\vspace{3pt}
+\end{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
-
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item AWS Certified Cloud Practitioner
 \end{itemize}
 
 % ============================================================
@@ -133,27 +142,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item English (native), Cantonese.
 \end{itemize}
 
 % ============================================================
