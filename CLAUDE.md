@@ -46,7 +46,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Technical Skills
 
-- **Primary:** JavaScript, TypeScript, React, Angular, Redux, RxJS
+- **Primary:** JavaScript, TypeScript, React, Angular, Redux, NgRx, RxJS
 - **Secondary:** Node.js, Ruby on Rails, SQL, PostgreSQL, Redis
 - **Domain:** B2B/enterprise workflow platforms, financial services, frontend architecture (RBAC, BFF, multi-step workflows)
 - **Software:** AWS (Lambda, CloudFormation), CI/CD, Cypress, Splunk, New Relic, CloudWatch

@@ -106,11 +106,14 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For financial services / full-stack roles:** *[Used for: schonfeld_full-stack-engineer]*
+> Full-stack engineer with 5+ years building commercial React, TypeScript, and Node.js applications for high-traffic financial services platforms. At Accenture Song, I've owned customer-facing features end-to-end, built a Backend-for-Frontend layer on AWS Lambda, and led a jQuery-to-React migration that cut UI defects by ~30%. I use Claude Code daily as a core part of how I build, and outside of work I designed and shipped an independent AI-powered product solo, from data model through backend to UI.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For full-stack / AI-adjacent roles:** *[Used for: kensho_full-stack-engineer]*
+> Full-stack engineer with 5+ years shipping production React, TypeScript, and Node.js features, with hands-on experience building an LLM-integrated product end-to-end — structured/schema-constrained outputs, human-in-the-loop validation, and a deterministic engine for the parts that can't tolerate model error. At Accenture Song, I own a Backend-for-Frontend layer on AWS Lambda and led a legacy jQuery-to-React migration. I use Claude Code daily as a core part of how I build.
+
+**For product / frontend engineering roles:** *[Used for: gigs_product-engineer]*
+> Product engineer with 5+ years building commercial React, TypeScript, and Node.js applications, with a track record of owning features end-to-end under ambiguous, evolving requirements. At Accenture Song, designed multi-step workflow systems from scratch, owned a Backend-for-Frontend layer, and led a full jQuery-to-React migration. I use Claude Code daily as a core part of how I build, not an occasional shortcut, and outside of work I designed and shipped an independent AI-powered product solo, from concept through a working end-to-end system, including its data model, backend, and UI.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

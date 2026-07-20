@@ -16,7 +16,7 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** JavaScript/TypeScript, React, Angular, Redux, RxJS, CSS, Cypress, frontend architecture (BFF, RBAC, multi-step workflows)
+**Strong match areas:** JavaScript/TypeScript, React, Angular, Redux, NgRx, RxJS, CSS, Cypress, frontend architecture (BFF, RBAC, multi-step workflows)
 **Moderate match areas:** Node.js, Ruby on Rails, AWS (Lambda, CloudFormation), PostgreSQL, Redis, CI/CD, observability (Splunk/New Relic/CloudWatch)
 **Weak match areas:** Backend-heavy/infrastructure-first roles, roles requiring deep systems/architecture ownership (growth area, not yet demonstrated at senior/staff level)
 
@@ -149,6 +149,16 @@ Present the evaluation as:
 - **Moderate Fit** (45-59): Consider carefully, discuss with user
 - **Weak Fit** (30-44): Probably skip unless strategic reasons
 - **Poor Fit** (<30): Skip
+
+## Calibration from Past Applications
+
+<!-- Populated by /setup Path A from resolved (non-in_progress) outcome.md records only -->
+
+As of 2026-07-16, 3 applications have a final outcome, all `rejected` at the resume-screen stage with no interview reached: Braze (Senior Software Engineer, Frontend Infrastructure), Spotify (Frontend Engineer - Music, triage-scored 76.8/Strong Fit on paper), and Spotify (Web Engineer - Podcast). All three share a common thread: materials were either untailored (applied directly on the company site, outside the `/apply` workflow) or predated the profile corrections made this cycle (degree name, tenure, certifications).
+
+By contrast, none of the 5 `/apply`-drafted, `/rank`-verified applications currently `in_progress` (Virtu, Nourish, Kensho, Kin Insurance, Schonfeld) have been rejected at resume screen — Kin Insurance has already reached a live interview stage.
+
+**Preliminary signal, not a proven trend** given the small sample and several still-pending resolutions: resume-screen rejections so far correlate with skipping the `/apply` drafter-reviewer workflow, not with underlying fit. Re-evaluate this section once more applications resolve.
 
 ## Pre-Application: Call the Employer (Best Practice)
 

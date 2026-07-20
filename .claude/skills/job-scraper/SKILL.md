@@ -60,6 +60,8 @@ If this fails (bun not installed), skip to **1c (WebSearch fallback)** for all p
 
 Discover all installed portal CLI skills by reading every `SKILL.md` found under `.agents/skills/*/SKILL.md`. Each file documents that portal's exact CLI flags and usage examples. **Use each portal's own documented interface — do not guess flags.** This approach automatically includes any new portals added via `/add-portal` without requiring changes to this file.
 
+**`freehire-search` is not optional — run it every scrape, before the ATS WebSearch dorking pass (Step 1d/`ats-boards.md`).** It queries a structured API aggregating ~50 ATS platforms (Ashby, Greenhouse, Lever, Workday among them) and returns real parsed descriptions, not scraped HTML — so it doesn't hit the JS-shell wall that blocks WebFetch on those same hosts. A real posting was missed for a full week (2026-07-09 through 2026-07-15) because this CLI was listed as "installed" but never actually invoked — don't repeat that. See `ats-boards.md`'s "Try `freehire-search` first" section for the exact query pattern and the `--city` pitfall (don't filter by city; remote-US roles frequently have no city facet resolved at all).
+
 For each installed portal skill:
 
 1. Read its `SKILL.md` to find the correct `bun run …` invocation and supported flags.

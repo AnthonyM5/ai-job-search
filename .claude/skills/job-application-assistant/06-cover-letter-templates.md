@@ -151,6 +151,12 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 - Adjust date format to local convention
 - Adjust closing to local convention (e.g. "Med venlig hilsen," for Danish)
 
+## Patterns Observed in Past Applications
+
+<!-- Populated by /setup Path A from archived cover_letter.tex files -->
+
+**Honest gap disclosure.** When a posting names a specific tool or pattern not directly used before, name the gap plainly in the letter body and immediately bridge to adjacent, genuinely-held experience — rather than staying silent on it or implying equivalence. Observed in 2+ archived letters: the Kensho letter names not having used LangGraph specifically, then bridges to the structured-output/human-in-the-loop pattern built for PawPlate; the Schonfeld letter names the Python gap, then bridges to the deterministic-engine work in the same project. This mirrors the CV-side "interview backtrack test" (`03-writing-style.md`) — a claim you'd have to walk back under questioning doesn't belong in the letter, but a named gap with a genuine adjacent bridge reads as self-aware rather than weak.
+
 ## Checklist Before Finalizing
 - [ ] No em-dashes (use commas or periods instead)
 - [ ] No cliches or empty filler

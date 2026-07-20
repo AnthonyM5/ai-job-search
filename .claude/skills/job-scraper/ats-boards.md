@@ -6,6 +6,24 @@ This file is the strategy for reaching those postings directly. It is used by th
 
 ---
 
+## ⚠ Try `freehire-search` first — it's usually a better tool for this exact job
+
+**`.agents/skills/freehire-search/` is an installed CLI that queries a structured API aggregating ~50 ATS platforms — including Ashby, Greenhouse, Lever, and Workday.** It returns parsed job data (full description, skills list, work mode, region) directly from freehire.dev's backend, not scraped HTML. This sidesteps the single biggest failure mode below entirely: it never has to render client-side JavaScript, so it never returns a JS-shell with no content.
+
+**Confirmed 2026-07-15:** a real posting (OnePay, "Frontend Engineer, Servicing," a strong skill match including named Cypress/Jest/Playwright/Redux) was missed by an entire week of WebSearch-based Ashby dorking, because the search engine's index of that Ashby page apparently only contained the title — the co-occurring skill keywords (`React TypeScript`) required in every query never matched. `freehire-search -q "frontend engineer"` found it on the first try, with the full description attached.
+
+**Use `freehire-search` as the primary sweep for ATS coverage. Fall back to the WebSearch dorking technique below only for postings freehire's crawl doesn't have** (it's a best-effort community crawler, not exhaustive — see its own `SKILL.md` for the ~50-platform scope and caveats).
+
+**Query pattern that actually works for this profile:**
+```bash
+bun run .agents/skills/freehire-search/cli/src/cli.ts search -q "frontend engineer" --category frontend --country US --jobage 14 -n 20 --format json
+bun run .agents/skills/freehire-search/cli/src/cli.ts search -q "full stack engineer" --category fullstack --country US --jobage 14 -n 20 --format json
+```
+
+**Do not filter by `--city "New York"`.** Remote-eligible roles are frequently tagged only `"United States (Remote)"` with no city facet resolved at all — freehire's own docs call this out explicitly (see "Partial data" in its `SKILL.md`): a missing city/region means "unresolved," not "not applicable." Filtering on city silently drops exactly the remote-US roles this profile is most interested in. Use `--country US` (optionally `--remote remote,hybrid`) and filter for NYC/remote fit by reading the `location` field in results, not via the facet.
+
+---
+
 ## The Technique
 
 1. Pick an ATS host from the table below.
